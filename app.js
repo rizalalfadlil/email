@@ -1,9 +1,10 @@
 const express = require('express');
 const nodemailer = require('nodemailer');
 const { google } = require('googleapis');
+const cors = require('cors');
 require("dotenv").config();
-
 const app = express();
+app.use(cors());
 app.use(express.json()); // Untuk parsing JSON dari body request
 
 const CLIENT_ID = "956493514732-72qe9e4tng1ph48c28a8cpeq3h7q33m2.apps.googleusercontent.com"
