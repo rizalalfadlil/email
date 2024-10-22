@@ -62,7 +62,7 @@ app.post('/send-email', async (req, res) => {
     res.status(500).send({ message: 'Error sending email', error });
   }
 });
-
+app.get("/", (req, res) => res.send("wandahoyyy!!"));
 // Jalankan server
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
