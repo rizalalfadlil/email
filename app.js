@@ -6,11 +6,11 @@ require("dotenv").config();
 const app = express();
 app.use(express.json()); // Untuk parsing JSON dari body request
 
-const CLIENT_ID = process.env.CLIENT_ID;
-const CLIENT_SECRET = process.env.CLIENT_SECRET;
-const REDIRECT_URI = process.env.REDIRECT_URI;
-const REFRESH_TOKEN = process.env.REFRESH_TOKEN;
-const EMAIL = process.env.EMAIL;
+const CLIENT_ID = "956493514732-72qe9e4tng1ph48c28a8cpeq3h7q33m2.apps.googleusercontent.com"
+const CLIENT_SECRET = "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"
+const REDIRECT_URI = "https://developers.google.com/oauthplayground"
+const REFRESH_TOKEN = "1//040oOTWr0glvjCgYIARAAGAQSNwF-L9IrQklRiS4Jyu_LTheK1Xkc6Nh3gkj8hqS7tZEkvzi8XSjLUWC-kMvuV0eyveEeoKmw7c8"
+const EMAIL = "akusuaminyaemuotori@gmail.com"
 
 const oAuth2Client = new google.auth.OAuth2(
   CLIENT_ID,
